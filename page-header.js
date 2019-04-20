@@ -1,13 +1,7 @@
 export default {
   template: `
   <div>
-    <h1>Single-file JavaScript Component</h1>
-    <p>{{ message }}</p>
+    <h1>This is my header!</h1>
   </div>
-  `,
-  data() {
-    return {
-      message: 'Oh hai from the component'
-    }
-  }
+  `
 }
