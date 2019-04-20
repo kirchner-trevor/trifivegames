@@ -1,7 +1,5 @@
-import PageHeader from './page-header.html'
-
 export default {
-  template: PageHeader,
+  template: '#page-header-template',
   data() {
     return {
       message: 'Oh hai from the component'
