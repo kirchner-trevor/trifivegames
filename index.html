@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vue.js Single-File JavaScript Component Demo</title>
-  <script src="https://unpkg.com/vue"></script>
+  <title>Tri Five Games</title>
+  <script src="//unpkg.com/vue/dist/vue.js"></script>
+  <script src="//unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
 <body>
   <div id="app">
     <page-header></page-header>
     <p>Welcome to my website!</p>
-    <ul>
-      <li><a href="recipe_001.html">Recipe 001</a></li>
-    </ul>
+    <p>
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/foo">Go to Foo</router-link>
+      <router-link to="/bar">Go to Bar</router-link>
+    </p>
+    <router-view></router-view>
   </div>
   <script type="module" src="page-header.js"></script>
   <script type="module" src="app.js"></script>
