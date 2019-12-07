@@ -1,18 +1,20 @@
-import PageHeader from './page-header.js'
+import Home from './home.js'
+import Foo from './foo.js'
+import Bar from './bar.js'
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+const routes = [
+  { path: '/', component: Home },
+  { path: '/foo', component: Foo },
+  { path: '/bar', component: Bar }
+]
+
+const router = new VueRouter({
+  routes
+})
 
 new Vue({
-  el: '#app',
-  components: {
-    PageHeader
-  },
-  router: new VueRouter({
-    routes: [
-      { path: '/', component: this },
-      { path: '/foo', component: Foo },
-      { path: '/bar', component: Bar }
-    ]
-  })
-})
+  router,
+  template: /*html*/`
+  <router-view></router-view>
+  `
+}).$mount('#app')
