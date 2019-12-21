@@ -23,14 +23,16 @@ export default {
                                 </b-progress>
                             </p>
 
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1"><b-badge variant="success">Latest</b-badge> {{ game.updates[0].title }}</h5>
-                                <small>{{ moment(game.updates[0].date).fromNow() }}</small>
+                            <div v-if="latestUpdate">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><b-badge variant="success">Latest</b-badge> {{ latestUpdate.title }}</h5>
+                                    <small>{{ moment(latestUpdate.date).fromNow() }}</small>
+                                </div>
+                            
+                                <p class="mb-1">
+                                    {{ latestUpdate.message }}
+                                </p>
                             </div>
-                        
-                            <p class="mb-1">
-                                {{ game.updates[0].message }}
-                            </p>
                         </b-card-text>
                     </b-tab>
                     <b-tab>
@@ -103,6 +105,13 @@ export default {
                         title: 'Thing',
                         url: 'https://cdn4.buysellads.net/uu/1/58011/1576093266-B432_TA_Online_Ads_.png'
                     }]
+                },
+                'guilded': {
+                    title: 'Guilded',
+                    description: 'A bluffing and deduction game focused on simple mechanics and deep strategy.',
+                    progress: 80,
+                    updates: [],
+                    assets: []
                 }
             }
         }
@@ -113,10 +122,16 @@ export default {
         },
         stage() {
             let stage = 'Ideation';
-            if (this.game.progress >= 50) {
-                stage = 'Refinement';
+            if (this.game.progress >= 75) {
+                stage = 'Polishing';
+            }
+            else if (this.game.progress >= 50) {
+                stage = 'Work In Progress';
             }
             return stage;
+        },
+        latestUpdate() {
+            return this.game.updates && this.game.updates.length && this.game.updates[0];
         }
     },
     methods: {
