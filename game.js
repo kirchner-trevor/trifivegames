@@ -76,6 +76,25 @@ export default {
                             </b-container>
                         </b-card-text>
                     </b-tab>
+                    <b-tab>
+                        <template v-slot:title>
+                            Play <b-badge variant="info">{{ game.playables.length }}</b-badge>
+                        </template>
+                        <b-card-text>
+                            <b-list-group flush>
+                                <b-list-group-item class="flex-column align-items-start" v-for="(playable, index) in game.playables" :key="index">
+                                    <b-card-text>
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1"><b-badge variant="success">0.0.1</b-badge> {{ playable.title }}</h5>
+                                            <small>{{ moment(playable.date).fromNow() }}</small>
+                                        </div>
+                                        <p v-html="playable.description">
+                                        </p>
+                                    </b-card-text>
+                                </b-list-group-item>
+                            </b-list-group>
+                        </b-card-text>
+                    </b-tab>
                 </b-tabs>
             </b-card>
         </b-container>
@@ -104,6 +123,11 @@ export default {
                     assets: [{
                         title: 'Thing',
                         url: 'https://cdn4.buysellads.net/uu/1/58011/1576093266-B432_TA_Online_Ads_.png'
+                    }],
+                    playables: [{
+                        title: 'Tabletop Simulator',
+                        date: '2020-01-12T23:00:00Z',
+                        description: 'The first playable demo of Prophetic is now available on Tabletop Simulator! Head on over to the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1967682063" target="_blank">Steam Workshop Page</a> and give it a try.'
                     }]
                 },
                 'guilded': {
