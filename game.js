@@ -35,7 +35,7 @@ export default {
                             </div>
                         </b-card-text>
                     </b-tab>
-                    <b-tab>
+                    <b-tab v-if="game.updates && game.updates.length">
                         <template v-slot:title>
                             Updates <b-badge variant="info">{{ game.updates.length }}</b-badge>
                         </template>
@@ -64,7 +64,7 @@ export default {
                     
                         <b-button href="#" variant="primary">Go somewhere</b-button>
                     </b-tab>
-                    <b-tab>
+                    <b-tab v-if="game.assets && game.assets.length">
                         <template v-slot:title>
                             Assets <b-badge variant="info">{{ game.assets.length }}</b-badge>
                         </template>
@@ -76,7 +76,7 @@ export default {
                             </b-container>
                         </b-card-text>
                     </b-tab>
-                    <b-tab>
+                    <b-tab v-if="game.playables && game.playables.length">
                         <template v-slot:title>
                             Play <b-badge variant="info">{{ game.playables.length }}</b-badge>
                         </template>
