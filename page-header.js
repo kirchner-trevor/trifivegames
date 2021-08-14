@@ -2,7 +2,7 @@ export default {
   name: 'page-header',
   template: /*html*/`
   <b-navbar toggleable="lg" sticky type="dark" variant="danger">
-    <b-navbar-brand to="/">Tri Five Games</b-navbar-brand>
+    <b-navbar-brand to="/">Overthink</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
