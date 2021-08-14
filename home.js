@@ -13,7 +13,7 @@ export default {
                     class="mb-2"
                 >
                     <b-card-text>
-                    Tri Five Game's latest game is a 54 card, 4-player, competitive game that aims to give players agency and identity through unique card combinations.
+                    Overthink's latest game is a 54 card, 4-player, competitive game that aims to give players agency and identity through unique card combinations.
                     </b-card-text>
 
                     <b-button to="/game/prophetic" variant="primary">Check it out!</b-button>
