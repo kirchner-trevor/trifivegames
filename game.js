@@ -54,16 +54,6 @@ export default {
                             </b-list-group>
                         </b-card-text>
                     </b-tab>
-                    <b-tab>
-                        <template v-slot:title>
-                            Rules
-                        </template>
-                        <b-card-text>
-                            A detailed breakdown of how to play the game.
-                        </b-card-text>
-                    
-                        <b-button href="#" variant="primary">Go somewhere</b-button>
-                    </b-tab>
                     <b-tab v-if="game.assets && game.assets.length">
                         <template v-slot:title>
                             Assets <b-badge variant="info">{{ game.assets.length }}</b-badge>
@@ -112,18 +102,16 @@ export default {
                     description: 'Compete to prove yourself the prophesied one through careful planning, luck, and skill. Will you be light or dark?',
                     progress: 50,
                     updates: [{
-                        title: 'Crazy Stuff',
-                        message: 'Sample update',
-                        date: '2019-12-20'
+                        title: '2D Con 2021',
+                        message: 'Prophetic was renamed to Four Fates just in time for 2D Con in Minneapolis, MN. The rename from player feedback, the game really isn\'t about telling the future as much as its about your fate as a hero.',
+                        date: '2021-08-26'
                     }, {
-                        title: 'Crazy Stuff 2',
-                        message: 'Got some new art',
-                        date: '2019-12-15'
+                        title: 'Shortening Playtimes - Simplifying Cards',
+                        message: 'One of the biggest challenges with Prophetic has been the length of the games. While we want it to be a full feeling game, the game is generally reaching the 2 hour mark with 4 players, which is a bit too long. ' + 
+                        'With that in mind, we\'ve set a goal to reduce the average game time for 4 players to 1 hour. In order to accomplish that, we took a look at the most time consuming aspect of the game, and determined it to be the time players spend reading through their cards. While it\'s okay for players to take time in order to make a decision, we found that in this case it was simply reading through all the text that was taking up so much time. Where cards previously had 4 abilities, the active one being determined by the current round, they now have 2 abilities that can be used any time.',
+                        date: '2021-07-01'
                     }],
-                    assets: [{
-                        title: 'Thing',
-                        url: 'https://cdn4.buysellads.net/uu/1/58011/1576093266-B432_TA_Online_Ads_.png'
-                    }],
+                    assets: [],
                     playables: [{
                         title: 'Tabletop Simulator',
                         date: '2020-01-12T23:00:00Z',
