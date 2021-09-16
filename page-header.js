@@ -1,7 +1,7 @@
 export default {
   name: 'page-header',
   template: /*html*/`
-  <b-navbar toggleable="lg" type="dark" variant="danger" style="padding-left: 1rem;">
+  <b-navbar toggleable="lg" type="dark" variant="primary" style="padding-left: 1rem;">
     <b-navbar-brand to="/">Overthink</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
