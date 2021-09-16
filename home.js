@@ -16,7 +16,7 @@ export default {
                     Overthink's latest game is a 54 card, 4-player, competitive game that aims to give players agency and identity through unique card combinations.
                     </b-card-text>
 
-                    <b-button to="/game/prophetic" variant="primary">Check it out!</b-button>
+                    <b-button to="/game/four-fates" variant="primary">Check it out!</b-button>
                 </b-card>
                 <b-card
                     title="News"

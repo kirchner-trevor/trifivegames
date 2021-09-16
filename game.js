@@ -107,8 +107,8 @@ export default {
     data() {
         return {
             games: {
-                'prophetic': {
-                    title: 'Prophetic',
+                'four-fates': {
+                    title: 'Four Fates',
                     description: 'Compete to prove yourself the prophesied one through careful planning, luck, and skill. Will you be light or dark?',
                     progress: 50,
                     updates: [{
