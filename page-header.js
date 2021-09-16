@@ -8,6 +8,7 @@ export default {
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
+        <b-nav-item to="/game/big-bad-barge" exact exact-active-class="active">Big Bad Barge</b-nav-item>
         <b-nav-item to="/game/four-fates" exact exact-active-class="active">Four Fates</b-nav-item>
         <b-nav-item to="/game/guilded" exact exact-active-class="active">Guilded</b-nav-item>
       </b-navbar-nav>

@@ -99,7 +99,7 @@ export default {
             games: {
                 'four-fates': {
                     title: 'Four Fates',
-                    description: 'Compete to prove yourself the prophesied one through careful planning, luck, and skill. Will you be light or dark?',
+                    description: 'Compete to fulfill your fate through careful planning, luck, and skill. Will you be light or dark?',
                     progress: 50,
                     updates: [{
                         title: '2D Con 2021',
@@ -122,6 +122,13 @@ export default {
                     title: 'Guilded',
                     description: 'A bluffing and deduction game focused on simple mechanics and deep strategy.',
                     progress: 80,
+                    updates: [],
+                    assets: []
+                },
+                'big-bad-barge': {
+                    title: 'Big Bad Barge',
+                    description: 'Family friendly cargo shipping! Ship the most cargo through the canal before it gets blocked.',
+                    progress: 75,
                     updates: [],
                     assets: []
                 }
