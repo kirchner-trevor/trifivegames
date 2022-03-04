@@ -8,11 +8,26 @@ export default {
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item to="/game/big-bad-barge" exact exact-active-class="active">Big Bad Barge</b-nav-item>
-        <b-nav-item to="/game/four-fates" exact exact-active-class="active">Four Fates</b-nav-item>
-        <b-nav-item to="/game/guilded" exact exact-active-class="active">Guilded</b-nav-item>
+        <b-nav-item v-for="game in games" :key="game.id" :to="'/game/' + game.id" exact exact-active-class="active">{{ game.name }}</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-  `
+  `,
+  data() {
+    return {
+      games: []
+    }
+  },
+  mounted() {
+    this.loadGames();
+  },
+  methods: {
+    async loadGames() {
+      if (!this.games.length) {
+        var response = await fetch("/games.json");
+        var data = await response.json();
+        this.games = data;
+      }
+    }
+  }
 }
