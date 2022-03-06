@@ -8,6 +8,17 @@ export default {
         <b-container class="mt-3" fluid>
             <b-card-group deck>
                 <b-card
+                    title="New Game - Jan 2022"
+                    style="max-width: 20rem;"
+                    class="mb-2"
+                >
+                    <b-card-text>
+                    Train to defeat the Ultimate Kung Fruit by battling monsterous plants in Kung Fu Farming! A lite deckbuilding game containing food based economies, and cooperative monster battling.
+                    </b-card-text>
+
+                    <b-button to="/game/kung-fu-farming" variant="primary">Check out Kung Fu Farming</b-button>
+                </b-card>
+                <b-card
                     title="New Game - Aug 2021"
                     style="max-width: 20rem;"
                     class="mb-2"
