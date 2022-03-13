@@ -48,7 +48,18 @@
         "name": "Kung Fu Farming",
         "description": "",
         "progress": 50,
-        "updates": [],
+        "updates": [
+            {
+                "title": "Fargo Game Makers Playtest - Trevor Kirchner & Overthink Games",
+                "message": "Replay Games is hosting a playtest for Kung Fu Farming using a real-life paper prototype! Attend the <a href=\"https://fb.me/e/1EHalWUrR\" target=\"_blank\">Facebook event</a> either in person or online!",
+                "date": "2022-03-17"
+            },
+            {
+                "title": "Twin Cities Playtest (February 2022)",
+                "message": "IGDA Twin Cities had a blast playtesting Kung Fu Farming on Tabletop Simulator! Check out the <a href=\"https://www.youtube.com/watch?v=RQtRw9JlR9I\" target=\"_blank\">VOD on YouTube</a>.",
+                "date": "2022-02-16"
+            }
+        ],
         "assets": [],
         "playables": []
     },

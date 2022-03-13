@@ -29,8 +29,7 @@ export default {
                                     <small>{{ moment(latestUpdate.date).fromNow() }}</small>
                                 </div>
                             
-                                <p class="mb-1">
-                                    {{ latestUpdate.message }}
+                                <p class="mb-1" v-html="latestUpdate.message">
                                 </p>
                             </div>
                         </b-card-text>
@@ -47,8 +46,7 @@ export default {
                                         <small>{{ moment(update.date).fromNow() }}</small>
                                     </div>
                                 
-                                    <p class="mb-1">
-                                        {{ update.message }}
+                                    <p class="mb-1" v-html="update.message">
                                     </p>
                                 </b-list-group-item>
                             </b-list-group>
@@ -112,6 +110,9 @@ export default {
                 stage = 'Polishing';
             }
             else if (this.game.progress >= 50) {
+                stage = 'Playtesting';
+            }
+            else if (this.game.progress >= 25) {
                 stage = 'Work In Progress';
             }
             return stage;
