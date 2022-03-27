@@ -25,11 +25,21 @@ export default {
 
                             <div v-if="latestUpdate">
                                 <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1"><b-badge variant="success">Latest</b-badge> {{ latestUpdate.title }}</h5>
+                                    <h5 class="mb-1"><b-badge variant="success">Update</b-badge> {{ latestUpdate.title }}</h5>
                                     <small>{{ moment(latestUpdate.date).fromNow() }}</small>
                                 </div>
                             
                                 <p class="mb-1" v-html="latestUpdate.message">
+                                </p>
+                            </div>
+
+                            <div v-if="latestPlayable" class="mt-2">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><b-badge variant="warning">Playable</b-badge> {{ latestPlayable.title }}</h5>
+                                    <small>{{ moment(latestPlayable.date).fromNow() }}</small>
+                                </div>
+                            
+                                <p class="mb-1" v-html="latestPlayable.description">
                                 </p>
                             </div>
                         </b-card-text>
@@ -73,7 +83,7 @@ export default {
                                 <b-list-group-item class="flex-column align-items-start" v-for="(playable, index) in game.playables" :key="index">
                                     <b-card-text>
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1"><b-badge variant="success">0.0.1</b-badge> {{ playable.title }}</h5>
+                                            <h5 class="mb-1"><b-badge variant="success">{{ playable.version }}</b-badge> {{ playable.title }}</h5>
                                             <small>{{ moment(playable.date).fromNow() }}</small>
                                         </div>
                                         <p v-html="playable.description">
@@ -119,6 +129,9 @@ export default {
         },
         latestUpdate() {
             return this.game.updates && this.game.updates.length && this.game.updates[0];
+        },
+        latestPlayable() {
+            return this.game.playables && this.game.playables.length && this.game.playables[0];
         }
     },
     methods: {

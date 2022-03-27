@@ -29,6 +29,7 @@
         "playables": [
             {
                 "title": "Tabletop Simulator",
+                "version": "0.0.1",
                 "date": "2020-01-12T23:00:00Z",
                 "description": "The first playable demo of Prophetic is now available on Tabletop Simulator! Head on over to the <a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=1967682063\" target=\"_blank\">Steam Workshop Page</a> and give it a try."
             }
@@ -61,7 +62,14 @@
             }
         ],
         "assets": [],
-        "playables": []
+        "playables": [
+            {
+                "title": "Tabletop Simulator",
+                "version": "0.6.0",
+                "date": "2022-03-27T03:00:00Z",
+                "description": "Now available on Tabletop Simulator! Head on over to the <a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=2785259116\" target=\"_blank\">Steam Workshop Page</a> and give it a try."
+            }
+        ]
     },
     {
         "id": "kingdom-clash",
