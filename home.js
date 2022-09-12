@@ -1,4 +1,5 @@
 import PageHeader from './page-header.js'
+import SubscribeModal from './subscribe-modal.js'
 
 export default {
     name: 'home',
@@ -6,6 +7,11 @@ export default {
     <div>
         <page-header></page-header>
         <b-container class="mt-3" fluid>
+            <b-jumbotron header="Overthink Games">
+                <p>Games made with simple complexity.</p>
+                <b-button v-b-modal.subscribe variant="primary">Subscribe <b-icon icon="bell"/></b-button>
+                <subscribe-modal></subscribe-modal>
+            </b-jumbotron>
             <b-card-group deck>
                 <b-card
                     title="New Game - Jan 2022"
@@ -54,6 +60,7 @@ export default {
     </div>
     `,
     components: {
-        PageHeader
+        PageHeader,
+        SubscribeModal
     }
 }
