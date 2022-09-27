@@ -76,7 +76,11 @@
         "name": "Wit & Whiskers",
         "description": "",
         "progress": 80,
-        "updates": [],
+        "updates": [            {
+            "title": "Board Game Geek Page",
+            "message": "Wit & Whiskers now has an official listing on Board Game Geek! You can <a href=\"https://boardgamegeek.com/boardgame/370066/wit-whiskers\" target=\"_blank\">check it out here</a>.",
+            "date": "2022-09-13T01:24:00Z"
+        }],
         "assets": [],
         "playables": []
     }
