@@ -13,6 +13,17 @@ export default {
                 <subscribe-modal></subscribe-modal>
             </b-jumbotron>
             <b-card-group deck>
+               <b-card
+                    title="Update - Apr 2023"
+                    style="max-width: 20rem;"
+                    class="mb-2"
+                >
+                    <b-card-text>
+                    Wit & Whiskers is getting ready for prime-time! Several visual updates have been made and a new digital prototype is <a href="https://playingcards.io/sa547b">now available to play</a>. 
+                    </b-card-text>
+
+                    <b-button to="/game/wit-and-whiskers" variant="primary">Check out Wit & Whiskers</b-button>
+                </b-card>
                 <b-card
                     title="New Game - Jan 2022"
                     style="max-width: 20rem;"
@@ -30,7 +41,7 @@ export default {
                     class="mb-2"
                 >
                     <b-card-text>
-                    Compete to ship the most cargo through the canal while trying to avoid getting blocked in this quick family friendlybluffing game! 
+                    Compete to ship the most cargo through the canal while trying to avoid getting blocked in this quick family friendly bluffing game! 
                     </b-card-text>
 
                     <b-button to="/game/big-bad-barge" variant="primary">Check out Big Bad Barge</b-button>

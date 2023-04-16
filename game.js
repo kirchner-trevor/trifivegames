@@ -19,7 +19,7 @@ export default {
                             <h4>Progress</h4>
                             <p>
                                 <b-progress height="2rem" class="mt-2" :max="100" show-value>
-                                    <b-progress-bar :value="game.progress">{{ stage }}</b-progress-bar>
+                                    <b-progress-bar :value="progress">{{ stage }}</b-progress-bar>
                                 </b-progress>
                             </p>
 
@@ -125,7 +125,13 @@ export default {
             else if (this.game.progress >= 25) {
                 stage = 'Work In Progress';
             }
+            else if (this.game.progress < 0) {
+                stage = 'Shelved';
+            }
             return stage;
+        },
+        progress() {
+            return Math.abs(this.game.progress);
         },
         latestUpdate() {
             return this.game.updates && this.game.updates.length && this.game.updates[0];

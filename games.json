@@ -39,7 +39,7 @@
         "id": "guilded",
         "name": "Guilded",
         "description": "A bluffing and deduction game focused on simple mechanics and deep strategy.",
-        "progress": 80,
+        "progress": -80,
         "updates": [],
         "assets": [],
         "playables": []
@@ -82,6 +82,11 @@
             "date": "2022-09-13T01:24:00Z"
         }],
         "assets": [],
-        "playables": []
+        "playables": [{
+            "title": "PlayingCards.io",
+            "version": "0.9.0",
+            "date": "2023-04-16T14:00:00Z",
+            "description": "Now available on PlayingCards.io! Grab some friends and <a href=\"https://playingcards.io/sa547b\" target=\"_blank\">give it a try</a>."
+        }]
     }
 ]
