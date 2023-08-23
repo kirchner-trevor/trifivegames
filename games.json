@@ -74,7 +74,7 @@
     {
         "id": "wit-and-whiskers",
         "name": "Wit & Whiskers",
-        "description": "",
+        "description": "A team based multi-layer pattern making card game about recruiting animals into your adventuring guild!",
         "progress": 80,
         "updates": [            {
             "title": "Board Game Geek Page",
@@ -86,7 +86,7 @@
             "title": "PlayingCards.io",
             "version": "0.9.0",
             "date": "2023-04-16T14:00:00Z",
-            "description": "Now available on PlayingCards.io! Grab some friends and <a href=\"https://playingcards.io/sa547b\" target=\"_blank\">give it a try</a>."
+            "description": "Now available on PlayingCards.io! Grab some friends and <a href=\"https://playingcards.io/228mk3\" target=\"_blank\">give it a try</a>."
         }]
     }
 ]
